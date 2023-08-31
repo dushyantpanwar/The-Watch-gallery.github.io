@@ -1,0 +1,1654 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootsweb.css">
+</head>
+<style>
+    .container1 {
+        height: 65px;
+        width: 100%;
+        background-color: black;
+        
+    }
+    
+    .flax1 {
+        width: 100%;
+        height: 65px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box1_flax1 img:hover {
+        cursor: pointer;
+    }
+
+    .flex_box2 {
+        height: 65px;
+        display: flex;
+        flex-direction: row;
+        width: 125%;
+        padding: 27px 30px;
+    }
+
+    .flex_box2 li:hover {
+        cursor: pointer;
+
+    }
+
+    .flex_box3 {
+        display: flex;
+        padding: 29px 160px;
+        flex-direction: row;
+    }
+
+    #logo_container1:hover {
+        cursor: pointer;
+        color: rgb(255, 198, 0);
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    .list1_buy {
+
+        cursor: pointer;
+        display: none;
+    }
+
+    .flex_box2 li:hover .list1_buy {
+        display: block;
+        cursor: pointer;
+        transition: 0.8s;
+
+    }
+
+    #txt_container1 ul li:hover {
+        color: rgb(255, 198, 0);
+    }
+
+    .search-container {
+        background: #fff;
+        height: 30px;
+        border-radius: 30px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.8s;
+
+
+
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2),
+            inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    }
+
+    .search-container:hover>.search-input {
+        width: 1300px;
+    }
+
+    .search-container .search-input {
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        transition: 0.8s;
+
+    }
+
+    .search-container .search-btn .fas {
+        color: #5cbdbb;
+    }
+
+    @keyframes hoverShake {
+        0% {
+            transform: skew(0deg, 0deg);
+        }
+
+        25% {
+            transform: skew(5deg, 5deg);
+        }
+
+        75% {
+            transform: skew(-5deg, -5deg);
+        }
+
+        100% {
+            transform: skew(0deg, 0deg);
+        }
+    }
+
+
+
+
+
+
+    .search_container1 li:hover {
+        cursor: pointer;
+        color: rgb(255, 198, 0);
+    }
+
+    .container2 {
+        background-color: black;
+        width: 100%;
+        height: 880px;
+    }
+
+    .flex_container2 {
+        display: flex;
+        flex-direction: row;
+        margin: 53px 500px;
+    }
+
+    .btn_container2 {
+        background-color: rgb(255, 198, 0);
+        font-size: 16px;
+        width: 143px;
+        height: 43px;
+        border-radius: 40px;
+        text-align: center;
+        padding: 10px 0px;
+        margin: 31px 0px;
+    }
+
+    .btn1_container2:hover {
+        cursor: pointer;
+    }
+
+    .btn2_container2 {
+        border: 1px solid;
+        color: white;
+
+        width: 170px;
+        height: 53px;
+        border-radius: 30px;
+        padding: 13px;
+        margin: 10px 20px;
+        transition: 0.9s;
+    }
+
+    .btn2_container2:hover {
+        background-color: rgb(255, 198, 0);
+        cursor: pointer;
+        color: black;
+
+    }
+
+    .backgroundimg_container2 img {
+        margin: 300px 215px;
+    }
+
+    .btn1_container2 {
+        background-color: rgb(255, 198, 0);
+        width: 163px;
+        height: 53px;
+        border-radius: 30px;
+        padding: 15px;
+        margin: 10px 20px;
+        transition: 0.7s;
+    }
+
+    #img_container2_fluid {
+        margin: 100px 30px;
+        height: 300px;
+
+    }
+
+    #txt-container2fluid {
+        background-color: white;
+        transition: 1s;
+
+    }
+
+    .container2-fluid {
+        height: 400px;
+    }
+
+    .container3 {
+        width: 100%;
+        height: 900px;
+        background-color: #9a8d8d;
+    }
+
+    .img_container3 {
+        width: 100%;
+        height: 900px;
+        background-image: url(img-home-02.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .txt_container3 {
+        transition: 1s;
+
+    }
+
+    .txt_container3 p {
+
+        background-color: rgb(255, 198, 0);
+        width: 45px;
+        height: 28px;
+        text-align: center;
+        margin: -480px 150px;
+    }
+
+    .txt_container3 h1 {
+        margin: 500px 150px;
+        font-size: 60px;
+        font-family: revert;
+
+
+    }
+
+    .txt-container3a {
+        font-size: 16px !important;
+        margin: -481px 150px !important;
+        color: #635d5d !important;
+        width: 50% !important;
+        text-align: inherit !important;
+        background-color: whitesmoke !important;
+    }
+
+    .container4 {
+        width: 100%;
+        height: 800px;
+        background-color: black;
+    }
+
+    .txt_container4 img {
+        margin: 10px -400px;
+    }
+
+    .container5 {
+        height: 500px;
+        width: 100%;
+    }
+
+    .backgroundimg_container5 {
+        background-image: url(img-home-04.jpeg);
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        background-position: center;
+    }
+
+    .backgroundimg_container5 i:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    .container6 {
+        width: 100%;
+        height: 600px;
+    }
+
+    .container9 {
+        width: 100%;
+        height: 700px;
+    }
+
+    .container10-fluid {
+        width: 100%;
+        height: 700px;
+        background-color: rgb(212, 212, 212);
+
+    }
+
+    .container11 {
+        width: 100%;
+        height: 150px;
+        background-color: black;
+    }
+
+    #logo_footer1:hover {
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: 0.5s;
+
+    }
+
+    @media screen and (min-width: 400px) and (max-width: 900px) {
+
+.container1{
+    position: relative;
+}
+.flax1 img{
+    position: absolute;
+}
+#flex_box2{
+    display: none;
+}
+.flex_box3 ul li{
+    width: 50px;
+}
+   
+        .backgroundimg_container2 img {
+            margin: 380px 10px;
+            height: 178px;
+
+        }
+
+        .btn1_container2 {
+            background-color: rgb(255, 198, 0);
+            width: 142px;
+            height: 46px;
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px -448px;
+            transition: 0.7s;
+            margin-top: 300px;
+        }
+
+        .flex_box2 {
+            position: fixed;
+            display: block;
+            top: 100px;
+            height: 100vh;
+        }
+
+        .btn2_container2 {
+            width: 161px;
+            height: 45px;
+            border-radius: 30px;
+            padding: 9px;
+            margin: 300px 465px;
+            transition: 0.9s;
+            color: white;
+
+        }
+
+        #txt-container2fluid {
+            background-color: white;
+            transition: 1s;
+            margin: -90px 11px;
+            width: 413px;
+
+        }
+
+        .container2-fluid {
+            height: 1000px;
+        }
+
+        .container3 {
+            background-color: whitesmoke;
+            width: 100%;
+            height: 327px;
+        }
+
+        .img_container3 {
+            width: 120%;
+            height: 300px;
+            background-image: url(img-home-02.jpg);
+            background-repeat: no-repeat;
+
+            background-size: contain;
+            background-position: left;
+        }
+
+        .txt_container3 {
+            transition: 1s;
+            width: 80%;
+
+
+            margin: 240px -130px;
+        }
+
+        .txt_container3 p {
+            background-color: rgb(255, 198, 0);
+            width: 30px;
+            height: 25px;
+            text-align: center;
+            margin: -455px 150px;
+        }
+
+        .txt_container3 h1 {
+            margin: 467px 147px;
+
+            font-size: 25px;
+            width: 50%;
+            font-family: revert;
+        }
+
+        .txt-container3a p {
+            background-color: whitesmoke;
+            text-align: inherit;
+            margin: 0px;
+            font-size: 10px !important;
+            width: max-content !important;
+            padding: 17px 0px !important;
+        }
+
+        .btn_container2 {
+            background-color: rgb(255, 198, 0);
+            font-size: 16px;
+            width: 102px;
+            height: 46px;
+            border-radius: 40px;
+            padding: 11px 0px;
+            padding: 10px 14px;
+            margin: 25px 0px;
+        }
+
+        .txt_container3a {
+            font-size: 10px;
+            margin: -467px 150px;
+            color: #635d5d;
+            width: 50%;
+            text-align: inherit;
+            background-color: whitesmoke;
+
+        }
+
+        #logo_container_3 {
+            margin: 514px 150px !important;
+            width: 100%;
+        }
+
+        #logo1_container_3 {
+            border-right: 1px solid;
+            width: 72px;
+            padding: 0px 0px;
+        }
+
+        #logo1_container_3 p {
+            background-color: whitesmoke;
+            margin: 10px -12px;
+
+        }
+
+        #logo2_container_3 {
+            border-right: 1px solid;
+            width: 91px;
+        }
+
+        #logo2_container_3 p {
+            background-color: whitesmoke;
+            margin: 10px -12px;
+            padding: 0px 10px;
+
+        }
+
+        #logo3_container_3 {
+            width: 20%;
+        }
+
+        #logo3_container_3 p {
+            background-color: whitesmoke;
+            margin: 10px -12px;
+            padding: 0px 10px;
+
+        }
+
+        .container4 {
+            transition: 1s;
+            width: 415px;
+            height: 650px;
+
+        }
+
+        .txt_container4 p {
+            margin: 0px -450px;
+        }
+
+        .txt_container4 h1 {
+            font-size: 25px !important;
+            margin: 19px -540px !important;
+        }
+
+        #txt_container4a {
+            margin: 10px -590px !important;
+            width: 327px !important;
+        }
+
+        .txt_container4 img {
+            height: 230px !important;
+            margin: 46px -684px !important;
+        }
+
+        .backgroundimg_container5 {
+            background-size: cover;
+            height: 271px;
+        }
+
+        .backgroundimg_container5 img {
+            margin: 0px -540px !important;
+        }
+
+        #link_container5 {
+            font-size: 45px !important;
+            margin: 0px -534px !important;
+        }
+
+        #logo_container5 {
+            font-size: 47px !important;
+            margin: 100px 700px !important;
+
+        }
+
+        .backgroundimg_container5 h1 {
+            margin: -102px 50px !important;
+            width: 102% !important;
+            font-size: 35px !important;
+        }
+
+        .backgroundimg_container5 p {
+            margin: 100px 3px !important;
+            text-align: center !important;
+
+            font-size: 10px !important;
+        }
+
+        #img_container6_fluid {
+            margin: -109px 17px !important;
+
+            height: 400px !important;
+        }
+
+        #txt_container6-fluid {
+            padding: 100px 28px !important;
+        }
+
+        #box1_container7-fluid {
+            padding: 20px 26px !important;
+        }
+
+        #google_logo {
+            margin: -48px 200px !important;
+        }
+
+        .container8-fluid {
+            padding: 28px 7px !important;
+            width: 150% !important;
+        }
+
+        .container9 h1 {
+            padding: 61px 26px !important;
+            font-size: 41px !important;
+        }
+
+        .container9 p {
+            margin: -61px 53px !important;
+        }
+
+        .container_9-fluid {
+            margin: 100px 0px !important;
+        }
+
+        .ratings {
+            margin: 10px 160px !important;
+        }
+
+        #rate_ratings {
+            margin: 0px 171px !important;
+        }
+
+        .container10-fluid {
+            margin-top: 900px !important;
+            margin: 900px -20px !important;
+            font-size: 10px !important;
+            width: 220% !important;
+            height: 500px !important;
+        }
+
+        #details_container10-fluid {
+            padding: 90px 50px !important;
+
+            width: 49% !important;
+        }
+
+        .container11 {
+            width: 150% !important;
+            height: 250px !important;
+        }
+
+        #footer1 {
+            padding: 22px 80px !important;
+            width: 65% !important;
+        }
+
+        #footer2 {
+            padding: 1px 72px !important;
+            width: 65% !important;
+        }
+    }
+
+    @media screen and (min-width: 820px) and (max-width: 1180px) {
+        .container2 {
+            width: 100% !important;
+        }
+
+        .backgroundimg_container2 img {
+            margin: 300px 39px !important;
+        }
+
+        .flex_container2 {
+            margin: 53px 306px !important;
+        }
+
+        #flex_box2 {
+            position: fixed !important;
+            left: 0 !important;
+
+
+            background-color: black !important;
+            line-height: 53px !important;
+            padding: 30px 150px !important;
+            z-index: 999 !important;
+        }
+    }
+</style>
+
+<body style="overflow-x: hidden;">
+    <div class="container1">
+        <div class="flax1">
+            <div class="box1_flax1">
+                <img style="margin: 28px 37px;" src="logo.png" alt="error">
+            </div>
+            <div style="z-index: 9;" class="box2_flax1">
+                <ul id="flex_box2" class="flex_box2" style="list-style: none;color:#9a8d8d;">
+                    <li style="width: 70px;font-size:15px;color:white;"> <a
+                            href="file:///Users/dushyantpanwar/Desktop/my%20portfolio/web4.html"
+                            style="text-decoration: none; color:#9a8d8d;">Home</a></li>
+                    <li style="width: 92px;font-size:15px;height:50px;">Buy Now
+                        <div style="width: 800px;
+                        margin: 20px -31px;
+                        background-color: white;
+                        height: 300px;
+                        padding: 40px;
+                        cursor:pointer;
+                    " class="list1_buy">
+                            <div class="row">
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> D&G</b></li><br>
+                                        <li>Sofas</li>
+                                        <li>Loveseats</li>
+                                        <li>Futons</li>
+                                        <li>Recliners</li>
+                                        <li>Ottomans</li>
+                                        <li>Console Tables</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> DIOR</b></li><br>
+                                        <li>Beds</li>
+                                        <li>Headbroads</li>
+                                        <li>Dressers</li>
+                                        <li>Nightstands</li>
+                                        <li>Makeup Vanities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 92px;font-size:15px;height:50px;">Features
+                        <div style="width: 800px;
+                        margin: 20px -31px;
+                        background-color: white;
+                        height: 450px;
+                        padding: 40px;
+                    " class="list1_buy">
+                            <div class="row">
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> THEME ELEMENTS</b></li><br>
+                                        <li>Product Elements</li>
+                                        <li>Product Categories Elements</li>
+                                        <li>Post Elements</li>
+                                        <li>Brand</li>
+                                        <li>Social Share</li>
+                                        <li>Newsletter</li>
+                                        <li>Testimonial</li>
+                                        <li>Features</li>
+                                        <li>Contact Form</li>
+                                        <li>Team Member</li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> VISUAL ELEMENTS</b></li><br>
+                                        <li>Icon – Font Awesome</li>
+                                        <li>Icon- Font Simplelineicons</li>
+                                        <li>Icon – Font Linearicons</li>
+                                        <li>Addon Image</li>
+                                        <li>Addon Tag</li>
+                                        <li>Addon Text</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b>WOOCOMMERCE</b></li><br>
+                                        <li>Flash Sale</li>
+                                        <li>Recently Viewed Products</li>
+                                        <li>Image Customer Review</li>
+                                        <li>Product Countdown</li>
+                                        <li>Product Attribute</li>
+                                        <li>Product Wishlist</li>
+                                        <li>On Sale Product</li>
+                                        <li>Best Selling Products</li>
+                                        <li>Top Rated Products</li>
+                                        <li>Ajax + Cart At Left</li>
+                                        <li>Ajax + Cart At Right</li>
+                                        <li>Ajax + Cart Popup</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li style="width: 70px;font-size:15px;height:50px;">Shop
+                        <div style="width: 330px;
+                        margin: 20px -31px;
+                        background-color: white;
+                        height: 300px;
+                        padding: 40px;
+                    " class="list1_buy">
+                            <div style="width: 1000px;" class="row">
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 92px;font-size:15px;height:50px;">Product
+                        <div style="width: 600px;
+                        margin: 20px -31px;
+                        background-color: white;
+                        height: 300px;
+                        padding: 40px;
+                    " class="list1_buy">
+                            <div style="width: 700px;" class="row">
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 70px;font-size:15px;height:50px;">Blog
+                        <div style="width: 800px;
+                        margin: 20px -31px;
+                        background-color: white;
+                        height: 300px;
+                        padding: 40px;
+                    " class="list1_buy">
+                            <div class="row">
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 70px;font-size:15px;height:50px;">Pages
+                        <div style="width: 600px;
+                        margin: 20px -31px;
+                        background-color: white;
+                        height: 300px;
+                        padding: 40px;
+                    " class="list1_buy">
+                            <div style="width: 700px;" class="row">
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="txt_container1">
+                                    <ul style="list-style: none;">
+                                        <li style="color: black;"> <b> WHAT'S NEW IN?</b></li><br>
+                                        <li>New In Today</li>
+                                        <li>New In This Week</li>
+                                        <li>Clothing</li>
+                                        <li>Shoes</li>
+                                        <li>Bags</li>
+                                        <li>Accessories</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box3_flax1">
+                <ul class="flex_box3" style="list-style: none;color:white;">
+                    <li style="width: 100px;">
+                        <button style="background-color: transparent;padding: 2px 10px;
+                        border: transparent;" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i style="height: 35px;"
+                                class="fa-solid fa-magnifying-glass" id="logo_container1"></i></button>
+
+                        <div style="height: 600px;" class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="search-container">
+                                    <input type="text" name="search" placeholder="Search..." class="search-input">
+                                    <a href="#" class="search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                                <br>
+                                <h4 style="color: black;
+margin: 20px 40px;
+font-family: inherit;">Search in:</h4>
+                                <ul class="search_container1" style="color: black;
+list-style: none;
+margin: 20px 20px;
+line-height: 35px;
+color: grey;
+font-size:20px">
+                                    <li> <b>All Categories</b> </li>
+                                    <li>England Watch (13)</li>
+                                    <li>Fashion Watch(4)</li>
+                                    <li>Health Watch (6)</li>
+                                    <li>Luxary Watch (9)</li>
+                                    <li>Smart Watch (10)</li>
+                                    <li>Sports Watch (2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 100px;"><a style="color:rgb(255, 255, 255) ;"
+                            href="file:///Users/dushyantpanwar/Desktop/bootstrapweb/i.html"><i style="height: 35px;"
+                                class="fa-solid fa-user" id="logo_container1"></i></a></li>
+                    <li style="width: 100px;"><a style="color: white;"
+                            href="file:///Users/dushyantpanwar/Desktop/bootstrapweb/like.html"><i style="height: 35px;"
+                                class="fa-solid fa-heart" id="logo_container1"></i></a></li>
+                    <li style="width: 100px;color:white;">
+                        <!-- Button trigger modal -->
+                        <button style="background-color:black; border:black;margin: -4px;" type="button"
+                            class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i style="width: 35px; " class="fa-solid fa-bag-shopping" id="logo_container1"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 style="color: black;
+          font-size: 20px;" class="modal-title" id="exampleModalLabel">SHOPPING CART</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div style="color: rgb(119, 115, 115);" class="modal-body">
+                                        Empty cart
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button style="background-color: white; color:black;border:white;" type="button"
+                                            class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button style="color: rgb(255, 198, 0);
+          background-color: white;
+          border: white;" type="button" class="btn btn-primary">Continue shoping--></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box4_flax1">
+                <button style="height: 21px;
+                width: 100%;
+                margin: -125px;
+                margin-top: -69px; background-color:rgb(255, 198, 0);border:transparent;" class="btn btn-primary"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img style="margin: 77px 34px;
+                    height: 33px;" src="mobile-logo.png" alt="error">
+                        <p style="font-size: 14px;
+                    padding: 0px 34px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu luctus
+                            lectus. Suspendisse non ultricies nisi, sed vesti bulum mauris.</p>
+                        <div class="dropdown">
+                            <button style="height: 40px;
+                                font-size: inherit;
+                                margin: 10px 32px;
+                                background-color: white;
+                                color: black;
+                                border: transparent;
+                            " class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                USA Dollar
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">USA Dollar</a></li>
+                                <li><a class="dropdown-item" href="#">European Euro</a></li>
+                            </ul>
+                        </div>
+                        <div class="list_toggle">
+                            <div style="width: 300%;
+                          margin: 10px 20px;
+                          font-size: 14px;" class="row">
+                                <div class="col-lg-1">English</div>
+                                <div class="col-lg-1"> Francais </div>
+                                <div class="col-lg-1"> Russian</div>
+                            </div>
+                            <p style="margin: 22px 32px;
+                          font-size: 16px;
+                      ">Hotline: (+1) 999 888 777</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="backgroundimg_container2">
+            <img src="img-slider.jpg" alt="">
+
+
+            <div style="margin: -900px 0px;
+width: 100%;
+text-align: center;" class="txt_container2">
+                <p style="color: rgb(131, 121, 121);
+                line-height: 0px;
+                font-size: small;
+                word-spacing: 5px;
+            ">A FULL YEAR OF FITNESS</p>
+                <h1 style="color:white;font-size: 75px;transition:1.4s;" data-aos="flip-left">Samsung Galaxy X.</h1>
+                <p style="color:white;word-spacing: 10px;
+                font-size: 15px;transition:1.2s;" data-aos="zoom-in-down">40mm | 42mm | 46mm</p>
+                <div style="
+                width: 100%;
+            " class="flex_container2">
+                    <div class="btn1_container2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                            style="width: 30px;" class="fa-solid fa-bag-shopping"></i>SHOP NOW</div><br>
+                    <div class="btn2_container2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                            style="width: 32px;" class="fa-solid fa-link"></i>VIEW DETAILS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2-fluid">
+        <div style="height: 400px;" class="row">
+            <div style="background-color: white;transition:1s;" class="col-lg-6 col-md-6 col-sm-12 "
+                data-aos="fade-right">
+                <img id="img_container2_fluid" src="img-home-01-534x440.jpg" alt="error">
+            </div>
+            <div id="txt-container2fluid" class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
+                <div style="margin: 90px 0px;" class="txt_container2">
+                    <p style="background-color: rgb(255, 198, 0);
+                    width: 23px;
+                    text-align: center;
+                    font-size: small;
+                    height: 22px;margin: 2px 0px;">01</p>
+                    <h1 style="font-size: 72px;
+                    line-height: 77px;
+                    font-family: system-ui;
+                "> <b>Variant Of <br> Colors.</b> </h1>
+                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aliquam eu
+                        luctus lectus. <b> Suspendisse</b> non ultricies nisi, <br> sed vestibulum mauris.</p>
+                    <br>
+                    <h5 style="font-family: revert;">Midnight Black</h5>
+                    <div class="container_2-fluid">
+                        <div class="row">
+                            <div style="background-color: black;border-radius:100%;background-color: black;
+    border-radius: 100%;
+    width: 38px;
+    height: 35px;
+    margin: 10px;" class="col-lg-1"></div>
+                            <div style="background-color: rgb(255, 168, 168);border-radius:100%;
+    border-radius: 100%;
+    width: 38px;
+    height: 35px;
+    margin: 10px;" class="col-lg-1"></div>
+                            <div style="background-color: rgb(217, 217, 217);border-radius:100%;
+    border-radius: 100%;
+    width: 38px;
+    height: 35px;
+    margin: 10px;" class="col-lg-1"></div>
+                        </div>
+                        <h4>$290.00</h4>
+                        <div class="btn_container2"> <b>Buy Now</b> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="img_container3"></div>
+        <div class="txt_container3" data-aos="fade-right">
+            <p>02</p>
+            <h1> <b> Water & Dust <br> Resistance.</b></h1>
+            <div class="txt-container3a">
+                <p style="width: 56%;
+                    background-color: whitesmoke;
+                    text-align: inherit;
+                    margin: 0px;">Nulla dapibus in augue sit amet dapibus. Phasellus fini <br> bus maximus tempus. Sed
+                    commodo sapien at.</p>
+            </div>
+
+            <div class="container_3">
+                <div id="logo_container_3" style="
+            margin: 550px 150px;
+        " class="row">
+                    <div id="logo1_container_3" style="border-right: 1px solid;width: 109px;" class="col-lg-1"><i
+                            class="fa-solid fa-droplet"></i><br>
+                        <p style="background-color: whitesmoke;
+                    margin: 10px -12px;">Water Resistance</p>
+                    </div>
+                    <div id="logo2_container_3" style="border-right: 1px solid;width: 109px;" class="col-lg-1"><i
+                            class="fa-regular fa-snowflake"></i><br>
+                        <p style="background-color: whitesmoke;
+                    margin: 10px -12px;padding:0px 10px;">Frozen Pressured</p>
+                    </div>
+                    <div id="logo3_container_3" class="col-lg-1"><i class="fa-solid fa-temperature-arrow-up"></i><br>
+                        <p style="background-color: whitesmoke;
+                    margin: 10px -12px;padding:0px 10px;">High Temperature
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="transition: 1s;" class="container4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div style="
+        padding: 100px 650px;
+    " class="txt_container4">
+            <p style="background-color: rgb(255, 198, 0);text-align: center;
+        width: 41px;
+        height: 28px;
+        padding: 2px;">03</p>
+            <h1 style="color: white;
+        width: 900px;
+        font-size: 60px;
+        margin: 0px -214px;"> <b>Heart Rate Tracker.</b> </h1>
+            <p id="txt_container4a" style="width: 700px;
+        margin: 10px -300px;
+        text-align: center;
+        color: grey;
+    ">Duis vitae dapibus turpis. Aliquam suscipit, elit vel elementum ullamcorper, massa augue <br> imperdiet eros, nec
+                hendrerit massa augue eu dui. Phasellus venenatis emaximus dolor <br> dapibus mi lobortis sodales.</p>
+            <img src="img-home-03.jpg" alt="error">
+        </div>
+    </div>
+    <div style="transition: 1s;" class="container5 col-lg-12 col-md-12 colsm-12" data-aos="zoom-in">
+        <div class="backgroundimg_container5">
+            <a id="link_container5" href="https://www.youtube.com/watch?v=XHOmBV4js_E"><i style="font-size: 85px;
+            color: red;
+            margin: 210px 700px;" class="fa-regular fa-circle-play" id="logo_container5"></i></a>
+            <h1 style="margin: -200px 450px;
+            width: 100%;
+            font-size: 70px;
+            color: white;">Track Your Workouts.</h1>
+            <p style="color: white;
+            margin: 200px 20px;
+            text-align: center;width:100%;">Nulla dapibus in augue sit amet dapibus. Phasellus finibus <br> maximus
+                tempus. Sed commodo sapien at urna gravida, in <br> tincidunt nunc malesuada. Maecenas a lobortis erat.
+            </p>
+        </div>
+    </div>
+    <div class="container6-fluid">
+        <div class="row">
+            <div style="transition:1s;" class="col-lg-6 " data-aos="fade-right"><img style="margin: 0px 171px;
+            height: 566px;" src="img-home-05.jpg" alt="error" id="img_container6_fluid"></div>
+            <div style="padding: 100px 74px; transition:1s;" class="col-lg-6" data-aos="fade-left"
+                id="txt_container6-fluid">
+                <p style="background-color: rgb(255, 198, 0);
+            width: 47px;
+            height: 30px;
+            padding: 3px;
+            text-align: center;">05</p>
+                <h1 style="font-size: 74px;"> <b>Quick Charge Wirelessly.</b> </h1>
+                <p style=" color:grey; font: size 16px;"> <b> Duis vitae </b>dapibus turpis. Aliquam suscipit, elit vel
+                    el ementum <br> ullamcorper, massa augue.</p>
+                <div class="container_6">
+                    <div style="width: 1500px;
+    margin: 33px 0px;" class="row">
+                        <div class="col-lg-1"><i class="fa-solid fa-battery-three-quarters"></i><br>
+                            <p style="color: #605757;border-right:1px solid grey;">4 Days Remain</p>
+                        </div>
+                        <div class="col-lg-1"><i class="fa-solid fa-signal-stream-slash"></i><br>
+                            <p style="color: #605757;border-right:1px solid grey;">Wireless Charde</p>
+                        </div>
+                        <div class="col-lg-1"><i class="fa-solid fa-bolt"></i><br>
+                            <p style="color: #605757;border-right:1px solid grey;">Quicky Charge 4.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container7-fluid">
+        <div class="row">
+            <div style="padding: 20px 200px; transition:1s;" class="col-lg-6" data-aos="fade-left"
+                id="box1_container7-fluid">
+                <p style="background-color: rgb(255, 198, 0);
+                width: 45px;
+                height: 30px;
+                padding: 2px;
+                text-align: center;">06</p>
+                <h1 style="font-size: 61px;
+                width: 200%;"> <b> IOS & Android Compatibility.</b></h1>
+                <p style="font-size: 16px; color:#605757;width: max-content;">Nulla dapibus in augue sit amet dapibus.
+                    Phasellus fini <br> <b>bus maximus </b> tempus. Sed commodo sapien at urna <br> gravida, in
+                    tincidunt nunc malesuada.</p>
+                <div style="width: 704%;margin: 29px 0px;
+            " class="container_7-fluid">
+                    <div class="row">
+                        <div class="col-lg-1"><img src="apple-store.jpg" alt="error"></div>
+                        <div class="col-lg-1" id="google_logo"><img src="google-store.jpg" alt="error"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="transition:1s;" class="col-lg-6" data-aos="fade-right"><img
+                    style="height: 500px;margin: 10px 60px;" src="img-home-06.jpg" alt="error"></div>
+        </div>
+    </div>
+    <div style="background-color: #80808024;padding: 28px 72px; font-size:14px;" class="container8-fluid">
+        <h4 style="padding: 10px 32px;
+   line-height: 12px;">SPECIFICATION</h4>
+        <hr style="margin: 9px 30px;
+   width: 89%;">
+        <div class="row">
+            <div class="col-lg-3">
+                <ul style="list-style:none;">
+                    <li> <b> Dimension</b></li><br>
+                    <li>Frontier 46 x 49 x 12.9T (62 g)</li>
+                    <li>*Weight without watch bands</li><br>
+                    <li> <b>Charge </b></li><br>
+                    <li>Wireless charging</li>
+                    <li>(WPC Inductive)</li><br>
+                    <li> <b> Home Ke</b>y</li><br>
+                    <li>-None-</li><br>
+                    <li> <b> Displa</b>y</li><br>
+                    <li>1.3” (33 mm)</li>
+                    <li>360 x 360 Fullcolor AOD,</li>
+                    <li>Corning® Gorilla® Glass SR+</li><br>
+                    <li> <b> Memory</b></li><br>
+                    <li>768MB + 4GB</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul style="list-style: none;">
+                    <li> <b>Sensor </b> </li><br>
+                    <li>Accelerometer, Gyro, Barometer,</li>
+                    <li>HRM, Ambient light</li><br>
+                    <li> <b>Battery </b> </li><br>
+                    <li>380mAh</li>
+                    <li>3~4 days</li><br>
+                    <li> <b> Hole Band </b> </li><br>
+                    <li>Small 110 mm</li>
+                    <li>Large 130 mm</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul style="list-style: none;">
+                    <li> <b> OS</b></li><br>
+                    <li>Tizen Based Wearable OS 2.3.2</li><br>
+                    <li> <b>Chipset</b></li><br>
+                    <li>Exynos 7270, Dual 1.0GHz</li><br>
+                    <li> <b> Network</b></li><br>
+                    <li>LTE with Embedded SIM</li>
+                    <li>*Applies to LTE models only</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul style="list-style: none;">
+                    <li> <b> Water & Dust</b> </li><br>
+                    <li>Frontier IP68</li>
+                    <li>12 ATM</li><br>
+                    <li> <b>Etc</b> </li><br>
+                    <li>Mic, SPK, Linear Motor</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container9">
+        <h1 style="padding: 100px 535px;
+        font-size: 46px;
+        width: 200%;
+        font-family: inherit;line-height:35px;
+    "> <b> Select Your Model.</b></h1>
+        <p style="margin: -100px 553px;
+        text-align: center;font-size:15px;
+    ">Sed ultricies velit pretium condim.</p>
+        <div style="margin: 127px 199px;
+    width: 100%;transition:1s;
+" class="container_9-fluid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="product-39.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="product-23.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div><br>
+                    <H6 style="text-align: center;">FREDERQUE CONSTANT</H6>
+                    <div style="color: rgb(255, 198, 0);
+            font-size: small;
+            margin: 10px 128px;
+        " class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                        <h6 style="color: rgba(255, 0, 0, 0.76);
+        margin:10px;
+        font-size: small;">480.00$</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="product-05.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="product-06.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div><br>
+                    <H6 style="text-align: center;">FRENCH CONNECTION</H6>
+                    <div style="color: rgb(255, 198, 0);
+            font-size: small;
+            margin: 10px 128px;
+        " class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                        <h6 style="color: rgba(255, 0, 0, 0.76);
+        margin: 10px ;
+        font-size: small;">480.00$</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="product-09.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="product-10.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div><br>
+                    <h6 style="text-align: center;">HUGO BOSS ORANGE</h6>
+                    <div style="color: rgb(255, 198, 0);
+            font-size: small;
+            margin: 10px 128px;
+        " class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <h6 style="color: rgba(255, 0, 0, 0.76);
+        margin: 0px 141px;
+        font-size: small;" id="rate_ratings">480.00$</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div style="background-color: rgb(245, 245, 245);" class="container10-fluid">
+        <br><br>
+        <h6 style="    padding: 0px 70px;">FAQS</h6>
+        <p style="    padding: 0px 70px;font-size:13px;color:rgb(116, 113, 113);">Nulla dapibus in augue sit amet
+            dapibus</p>
+        <div class="row">
+            <div style="margin: 40px 50px;
+            width: 41%;transition:1s;" class="col-lg-6" data-aos="fade-right">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <b>01. Would you rather have to sit all day or stand all day?</b>
+                            </button>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <b>02. Have you ever been in any YouTube videos?</b>
+                            </button>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <b>03. If you could acquire any skill, what would you choose?</b>
+                            </button>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <b>04. What website do you visit the most?</b>
+                            </button>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <b> 05. What is the biggest physical challenge that you have faced?</b>
+                            </button>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <b>06. Is it harder to exercise more or eat healthier?</b>
+                            </button>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <b>07. What's the longest you've gone without showering?</b>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button style="background-color:rgb(245, 245, 245);font-size: small;"
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <b> 08. What do you do when you're bored?</b>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="padding: 10px 120px;transition:1s;" class="col-lg-6" data-aos="fade-left"
+                id="details_container10-fluid">
+                <h6>LEAVE YOUR QUESTION</h6>
+                <P style="font-size: 13PX;color:rgb(136, 136, 136);">Your nasce posuere metus in mi facilisis varius.
+                </P>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Name*</label>
+                        <input style="border-radius: 25px;" type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">E-mail*</label>
+                        <input style="border-radius: 25px;" type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Subject</label>
+                        <input style="border-radius: 25px;" type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="form-floating">
+                        <textarea style="border-radius: 25px;height: 120px;" class="form-control"
+                            placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label style="padding: 15px 62px;" for="floatingTextarea2">Message</label>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button
+                            style="background-color:rgb(255, 198, 0) ;border-color:transparent;color :black;width: 114px;border-radius:25px;"
+                            type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="container11">
+        <div class="row">
+            <div id="footer1" style="    color: white;
+            padding: 4px 200px;
+            padding-top: 30px;
+        " class="col-lg-6"><i style="width: 35px;" class="fa-brands fa-facebook-f" id="logo_footer1"></i><i
+                    style="width: 36px;" class="fa-brands fa-twitter" id="logo_footer1"></i><i style="width: 45px;"
+                    class="fa-brands fa-youtube" id="logo_footer1"></i><i style="width: 55px;"
+                    class="fa-brands fa-instagram" id="logo_footer1"></i><i style="width: 30px;"
+                    class="fa-brands fa-pinterest-p" id="logo_footer1"></i>
+                <p style="font-size: 12px;
+            padding: 29px 0px;">Copyright © 2021 Urna. Powered by Thembay.</p>
+            </div>
+            <div id="footer2" style="padding: 39px 149px;
+        " class="col-lg-6">
+                <div class="input-group flex-nowrap">
+                    <span style="background-color: black;" class="input-group-text" id="addon-wrapping"><i
+                            style="color: white;" class="fa-solid fa-envelope"></i></span>
+                    <input style="background-color: black; color:#605757" type="text" class="form-control"
+                        placeholder="Username" aria-label="E-mail" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
